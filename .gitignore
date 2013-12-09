@@ -13,3 +13,18 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+.rspec
+.DS_Store
+*~
+*.swp
+.idea
+.project
+nbproject/*
+.redcar
+.directory
+.~lock.*
+.sass-cache
+uploads/
+log/
+db/schema.rb
