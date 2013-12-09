@@ -59,4 +59,12 @@ class MoviesController < ApplicationController
       format.html { redirect_to movies_url }
     end
   end
+
+  def tags
+    tags = Movie.all_tag_counts.by_tag_name(params[:q]).token_input_tags
+
+    respond_to do |format|
+      format.json { render json: tags }
+    end
+  end
 end
