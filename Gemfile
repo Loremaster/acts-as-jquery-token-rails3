@@ -21,4 +21,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.14.0'
 end
 
+group :development do
+  gem 'better_errors', '1.0.1'        # detailed exceptions view
+  gem 'binding_of_caller', '0.7.2'    # needed for better_errors advanced features
+  gem 'quiet_assets', '1.0.2'         # disables assets print in the log file
+end
+
 
