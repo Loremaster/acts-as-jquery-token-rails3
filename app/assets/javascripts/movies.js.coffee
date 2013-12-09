@@ -3,9 +3,9 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 jQuery ->
-  $('#movie_tag_list').tokenInput '/movies/tags.json',
+  $('#movie_tag_list_tokens').tokenInput '/movies/tags.json',
     theme: 'mac'
     minChars: 2
     allowCustomEntry: true                        # to be able create new tag.
     preventDuplicates: true
-    prePopulate: $('#movie_tag_list').data('load')
+    prePopulate: $('#movie_tag_list_tokens').data('load')
