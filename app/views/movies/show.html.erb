@@ -3,8 +3,10 @@
 <p>
   <b>Name:</b>
   <%= @movie.name %>
+  <br>
+  <b>Tags:</b>
+  <%= raw @movie.tag_list.join(', ') %>
 </p>
-
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
