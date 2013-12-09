@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.16'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'acts-as-taggable-on', '2.4.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
