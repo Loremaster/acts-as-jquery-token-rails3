@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  before_filter :find_tags, only: [:new, :create, :edit, :update]
+
   def index
     @movies = Movie.all
 
@@ -66,5 +68,11 @@ class MoviesController < ApplicationController
     respond_to do |format|
       format.json { render json: tags }
     end
+  end
+
+  private
+
+  def find_tags
+    @movie_tags = params[:id].present? ? Movie.find(params[:id]).tags.token_input_tags : []
   end
 end
