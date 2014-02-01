@@ -1,1 +1,1 @@
-This is a demo app for [my blogpost](http://bloginius.com/). It uses Rails 3.2, Jqery Token Input and Acts as taggable.
+This is a demo app for [my blogpost](http://bloginius.com/blog/2013/12/31/how-integrate-acts-as-taggable-on-with-jquery-token-input-with-rails-3/). It uses Rails 3.2, Jqery Token Input and Acts as taggable.
